@@ -1,0 +1,244 @@
+*{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  margin: 0px;
+  padding: 0px;
+  text-align: center;
+ 
+ 
+  --cor01: #BEFFC7;
+    --cor02: #3b617c;
+  --cor03: #423629;
+  --cor04: #3477a7;
+  --cor05: #fff;
+  --cor06: #eaeaeab8;
+  --cor07: #a8c59a;
+  --cor08: #3d6e43;
+  --cor09: rgb(196, 10, 10);
+  --cor010: #adbbc7;
+  --cor011: #7895aa;
+
+  
+}  
+
+body{
+  overflow-x: hidden;
+  overflow-y: auto; 
+}
+
+body::-webkit-scrollbar{
+display: none;
+}
+
+.sessao {
+  background-color: var(--cor06);
+  position: absolute;
+  width: 100px;
+  height: fit-content;
+  right: 5px;
+  padding: 3px;
+  z-index: 2;
+}
+
+.sessao h4 {
+  font-size: 15px;
+}
+
+.sessao .sair{
+  color: var(--cor09);
+}
+
+.container{
+    display: grid;
+    width: 100vw;
+    height: 100vh;
+  grid-template-rows: 0.1fr 1fr;
+  grid-template-areas: 
+   "header"
+   "tabela";
+  }
+
+  .header{
+   grid-area: header;
+   display: grid;
+   grid-template-columns: 0.1fr 1fr 0.1fr;
+   grid-template-areas: 
+   "back titulo logout";
+   padding: 2em;
+   background-color: var(--cor06);
+   z-index: 1;
+   box-shadow:  -5px 1px 10px #838383, 
+   1px 0 black;
+
+  }
+  
+  .back{
+    grid-area: back;
+    margin: 1em 4em 0 0;
+  }
+
+  .back i{
+    color: var(--cor04);
+    font-size: 40px;
+  }
+
+  .titulo{
+    grid-area: titulo;
+  }
+
+  h1{
+    font-size: 3rem;
+    color: var(--cor02)
+  }
+
+  h2{
+    font-size: 1.5rem;
+    color:var(--cor02)
+  }
+
+  .nomep{
+    width: 30%;
+    margin-bottom: 15px;
+    padding: 10px;
+    font-size:20px;
+    border: solid var(cor010);
+     border-radius:6px;
+}
+
+.conteudo{
+    width: 30%;
+    margin-bottom: 15px;
+    padding: 10px;
+    font-size:20px;
+    border: solid var(cor010);
+     border-radius:6px;
+
+}
+
+.btnpag{ 
+    cursor: pointer;
+    border-radius: 5%;
+    width: 8em;
+    height: 2em;
+    color: var(--cor02);
+    background-color: #ebebeb;
+    border: 2px solid var(--cor010);
+  
+  }
+
+  .btncan{ 
+    margin: 1em;
+    cursor: pointer;
+    border-radius: 5%;
+    padding: 0.3em 0.3em;
+    text-decoration: none;
+    background-color: #ebebeb;
+    color: var(--cor02);
+    border: 2px solid var(--cor010);
+  
+  }
+
+
+  .btnpag:hover{
+    font-size: 22px;
+    color: white;
+    background-color:var(--cor02);
+    border: none;
+  }
+
+  .btncan:hover{
+    font-size: 22px;
+    color: white;
+    padding: 0.4em 0.4em;
+    background-color:var(--cor02);
+    border: none;
+  }
+  
+
+
+  .logout{
+    grid-area: logout;
+  }
+
+  .tabela{
+    grid-area: tabela;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--cor010);
+    padding: 2em;
+    
+  }
+
+  
+table{
+    border: 2px solid black;
+    padding: 0px;
+    margin: 0px;
+  }
+  
+  
+  th{
+    background: var(--cor03);
+    color: rgba(241, 241, 241, 0.945);
+    font-size: 20px;
+    padding: 15px;
+    margin: 0px;
+  }
+  
+  tr{
+    background: var(--cor011);
+  }
+  
+  tr:nth-child(even) {
+    background: var(--cor01);
+  }
+  
+  tr:hover{
+    background: var(--cor03);
+    color: white;
+  }
+  
+  tr:hover > td > a {
+    color: white;
+  }
+  
+  td{
+    font-size: 25px;
+    padding: 5px;
+  }
+  
+  td > a {
+    font-size: 30px;
+    text-decoration: none;
+    color: black;
+  }
+  
+  td > a > i {
+    padding: 0px 15px;
+  }
+  
+  #icone {
+    color: rgb(255, 0, 0);
+    transition: background 0.5s;
+  }
+  
+  #icone:hover {
+    background: white;
+    border-radius: 15px;
+  }
+
+  #icone2 {
+    color:#46288d;
+  transition: background 0.5s;
+}
+
+#icone2:hover {
+  background: white;
+  border-radius: 15px;
+ 
+}
+  
+  
+  

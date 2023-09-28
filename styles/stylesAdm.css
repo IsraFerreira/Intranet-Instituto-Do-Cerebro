@@ -1,0 +1,218 @@
+*{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  margin: 0px;
+  padding: 0px;
+  text-align: center;
+ 
+  --cor01: #BEFFC7;
+  --cor02: #3E92CC;
+  --cor03: #423629;
+  --cor04: #3477a7;
+  --cor05: #fff;
+  --cor06: #adbbc7;
+  --cor07: #c36363;
+}    
+
+
+
+.sessao {
+  background-color: #f3f3f3;
+  position: absolute;
+  width: 100px;
+  height: fit-content;
+  right: 5px;
+  padding: 3px;
+}
+
+.sessao h4 {
+  font-size: 15px;
+}
+
+.sessao .sair{
+  color: var(--cor07);
+}
+
+.sessao .cadastrar {
+  margin-left: 20px;
+  color: var(--cor02)
+}
+
+.container{
+ display: grid;
+ height: 100vh;
+ width: 100vw;
+ grid-template-columns: 1fr 1fr 1fr 1fr ;
+ grid-template-rows: 1fr 10fr 0.3fr;
+ grid-template-areas: 
+ "header header header header"
+ "altera altera altera altera"
+ "footer footer footer footer";
+overflow-y: hidden;
+overflow-x: hidden;
+}
+
+.header{
+background-color: #f3f3f3;
+;
+grid-area: header;
+display: grid;
+grid-template-columns: 1fr 1fr 1fr;
+grid-template-rows: 1fr;
+grid-template-areas: 
+"ultimaMd sessao sessao";
+}
+
+.ultimaMd{
+  display: flex;
+  justify-content:left;
+  margin: 15px;
+  align-items:center; 
+  text-decoration: none;
+  cursor:pointer;
+  font-size:25px; 
+  color: #adbbc7;
+  font-weight: bolder;
+
+}
+
+.altera{
+grid-area: altera;
+display: grid;
+grid-template-columns: 1fr 1fr 1fr 1fr;
+grid-template-rows: 1fr 1fr 1fr;
+grid-template-areas: 
+"area1 area2 area3 area4"
+"area5 area6 area7 area8"
+"area9 area10 area11 area12";
+}
+
+.altera a{
+   display: flex;
+   justify-content: center;
+   align-items: center; 
+   /* display: grid;
+   grid-template-columns:1fr ;
+   grid-template-rows: 1fr 1fr;
+   grid-template-areas: 
+   "icone" 
+   "texto";
+   align-items: center;
+   justify-items: center; */
+   text-decoration: none;
+   cursor:pointer;
+   font-size:25px; 
+   color:black;
+ 
+
+  /* line-height: 150px; */
+  /* margin: 8vw 5vw 5vw 4vw;  */
+  /* background-color:#bbbbbb; */
+  /* border-radius:10%; */
+  /* box-shadow:  10px 30px 20px #676767, 
+  -5px 2px var(--cor04) ;  */
+
+}
+
+.efeito:hover{
+  display: grid;
+  border: 1px solid #000;
+  box-shadow:  8px 22px 15px #676767,  
+    -5px 1px 15px 2px black ;
+  transform: scale(1.1);
+  transition: all 0.5s;
+  content:"texto extra";
+  font-size:30px;
+  font-weight: bolder;
+
+  
+}
+
+.altera i{
+  font-size:30px;
+   margin: 0 7px;
+  
+}
+
+
+.area1 {
+  grid-area: area1;
+  background-color: #bee2fb;
+  
+}
+
+
+.area2 {
+  grid-area: area2;
+  background-color:#d0fff8;
+}
+
+
+
+.area3 {
+  grid-area: area3;
+  background-color:#eafff1;
+}
+
+
+.area4 {
+  grid-area: area4;
+  background-color:#fffee1;
+}
+
+.area5 {
+  grid-area: area5;
+  background-color:#ffbcbc;
+}
+
+.area6 {
+  grid-area: area6;
+  background-color:#fbdcf1;
+}
+
+.area7 {
+  grid-area: area7;
+  background-color:#ecdcfb;
+}
+
+.area8 {
+  grid-area: area8;
+  background-color:#e1e6ff;
+}
+
+.area9 {
+  grid-area: area9;
+  background-color:#a77bff;
+}
+
+.area10 {
+  grid-area: area10;
+  background-color:#ffa679;
+}
+
+.area11 {
+  grid-area: area11;
+  background-color:#ffc368;
+}
+
+.area12 {
+  grid-area: area12;
+  background-color:#ff7a7a;
+}
+
+
+.ultimaMd{
+  background-color: #f3f3f3;
+  grid-area: ultimaMd;
+}
+
+.footer{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: #f3f3f3;
+  grid-area: footer;
+  color:#9b9b9b;
+}
+

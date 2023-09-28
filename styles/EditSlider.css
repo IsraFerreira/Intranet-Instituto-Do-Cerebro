@@ -1,0 +1,189 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+   
+   
+    --cor01: #BEFFC7;
+    --cor02: #3E92CC;
+    --cor03: #423629;
+    --cor04: #3477a7;
+    --cor05: #fff;
+    --cor06: #eaeaeab8;
+    --cor07: #c36363;
+    --cor08: #3d6e43;
+  }  
+  
+  body{
+    overflow-x: hidden;
+    overflow-y: auto; 
+}
+
+body::-webkit-scrollbar{
+  display: none;
+}
+
+.sessao {
+    background-color: var(--cor06);
+    position: absolute;
+    width: 100px;
+    height: fit-content;
+    right: 5px;
+    padding: 3px;
+    z-index: 2;
+  }
+  
+  .sessao h4 {
+    font-size: 15px;
+  }
+  
+  .sessao .sair{
+    color: var(--cor07);
+  }
+  
+  .sessao .cadastrar {
+    margin-left: 20px;
+    color: var(--cor02)
+  }
+
+.container{
+    display: grid;
+    /* height: 100vh; */
+    width: 100vw;
+    height: fit-content;
+    grid-template-columns: 1fr ;
+    grid-template-rows: 1fr 6fr;
+    grid-template-areas:
+      "up"
+      "edit";
+  
+}
+
+
+.up{
+  grid-area: up;
+  display: grid;
+  grid-template-columns: 0.1fr 1fr 0.1fr;
+  grid-template-areas:
+  "icon upload logout";
+  background-color: var(--cor06);
+  z-index: 1;
+  box-shadow:  -5px 1px 10px #838383, 
+  1px 0 black;
+
+}
+
+.icon{
+  grid-area: icon;
+  margin: 1em 4em 0 0; 
+  
+}
+
+.up i{
+  color: var(--cor04);
+  font-size: 40px;
+}
+
+.upload{
+  grid-area: upload;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.logout{
+  grid-area: logout;
+}
+
+h1{
+    font-size: 40px;
+    padding: 10px;
+    color: var(--cor04);
+}
+
+
+input{
+    cursor: pointer;
+    margin-bottom: 15px;
+    padding: 10px;
+    font-size:25px;
+    border:none;
+     border-radius:6px;
+}
+
+.edit{
+    grid-area: edit;
+    background-color:#aecbd4;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 2em;
+
+}
+
+table{
+  border: 2px solid black;
+  padding: 0px;
+  margin: 0px;
+}
+
+
+th{
+  background: var(--cor03);
+  color: rgba(241, 241, 241, 0.945);
+  font-size: 15px;
+  padding: 15px;
+  margin: 0px;
+}
+
+tr{
+  background: var(--cor01);
+}
+
+tr:nth-child(even) {
+  background: var(--cor08);
+}
+
+tr:hover{
+  background: var(--cor03);
+  color: white;
+}
+
+tr:hover > td > a {
+  color: white;
+}
+
+td{
+  font-size: 15px;
+  padding: 5px;
+}
+
+td > a {
+  font-size: 15px;
+  text-decoration: none;
+  color: black;
+}
+
+td > a > i {
+  padding: 0px 15px;
+}
+
+#icone {
+  color: rgb(255, 0, 0);
+  transition: background 0.5s;
+}
+
+#icone:hover {
+  background: white;
+  border-radius: 15px;
+}
+
+
+.imagemSlides{
+  height: 300px;
+}
+

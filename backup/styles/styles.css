@@ -1,0 +1,245 @@
+*{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  margin: 0px;
+  padding: 0px;
+  text-align: center;
+ 
+  --cor01: #BEFFC7;
+  --cor02: #3E92CC;
+  --cor03: #423629;
+  --cor04: #3477a7;
+  --cor05: #fff;
+}     
+
+
+  /*---Index---*/
+.container{
+  display: grid;
+  height: 100vh;
+  width: 100vw;
+  grid-template-columns: 4fr 5fr 1fr;
+  grid-template-rows: 0.5fr 5fr 0.2fr;
+  grid-template-areas: 
+  "header  header header"
+  "bemVindo slider slider"
+  "footer footer footer";
+}
+
+
+.header{
+  background-color: #ccca3e;
+  grid-area: header;
+  display: grid;
+  grid-template-columns: 0.5fr 9fr 0.5fr;
+  grid-template-areas: 
+  "logoimg menu menu2";
+}
+
+.logoimg {
+  grid-area: logoimg;
+  margin: 0px 0px 0px 15px;
+}
+
+.menu {
+  grid-area: menu;
+  }
+  
+  .menu a{
+    text-decoration: none;
+    padding: 15px 15px 15px 15px;
+    color: var(--cor04);
+    margin: 0 1vw;
+    line-height: 100px;
+    border-radius: 25%;
+    border: 2px solid var(--cor04);
+  }
+  
+  .menu a:hover {
+  background-color: var(--cor04);
+  color: #fff;
+  }
+
+  .menu2{
+    position: relative;
+    width: 90px;
+    height: 70px;
+    margin: 20px 60px 20px 0px;
+    cursor:pointer;
+    border: 3px solid var(--cor04);
+    border-radius: 30px;
+    background-color: var(--cor02);
+    grid-area: menu2;
+    }
+    
+    .menu2:after {
+    content: "";
+    position: absolute;
+    top:20px;
+    left:28px;
+    width: 35px;
+    height:6px;
+    border-top: 15px double var(--cor05);
+    border-bottom: 5px solid var(--cor05);
+    }
+    
+    .menu2 ul{
+    list-style: none;
+    padding: 0;
+    }
+    
+    .menu2 li {
+    padding: 0.2em;
+    margin-top: 0.2em; 
+    text-align: center;
+    white-space:nowrap; 
+    overflow:hidden;
+    text-overflow:ellipsis;
+    border-bottom-right-radius:0.5em;
+    transition: all 1s;
+    background: var(--cor01);
+    opacity:0;
+    z-index:-1;
+    font-size:10px;
+    }
+    
+    .menu2:hover li{
+    opacity: 1;
+    }
+    
+    .menu2:hover ul::before{
+    position: absolute;
+    content: "";
+    display:block;
+    left: -1em;
+    top:-2em;
+    border-width: 5.5em;
+    border-radius: 5em 5em 5em 5em;
+    border-left: 0;
+    border-style: none;
+    border-color:var(--cor05);
+    cursor: default;
+    z-index: -1;
+    }
+    
+    .menu2 a{
+    color: var(--cor05);
+    text-decoration: none;
+    line-height: 1.5em;
+    }
+    
+    .menu2 a{ 
+    color: var(--cor05);
+    text-decoration: none;
+    }
+    
+    .menu2 ul{
+    transform: rotate(180deg) translateY(-2em);
+    transition: 1s all;
+    }
+    
+    .menu2:hover ul{
+    transform: rotate(180deg) translateY(-1em);
+    }
+    
+    .menu2 li :hover{
+    background: var(--cor04);
+    z-index: 10 ;
+    }
+    
+    .menu2 li:nth-of-type(1){
+    transform: rotate(180deg);
+    margin-left: -3em;
+    margin-top:32px;
+    border-radius: 0em 0em 0em 0em;
+    background-color: var(--cor02);
+    width: 18em;
+    height:4em;
+    text-align: center;
+    border: 0.2em solid var(--cor04);
+    }
+    
+    .menu2 li:nth-of-type(2), 
+    .menu2 li:nth-of-type(3),
+    .menu2 li:nth-of-type(4), 
+    .menu2 li:nth-of-type(5), 
+    .menu2 li:nth-of-type(6){
+    transform: rotate(180deg);
+    margin-left: -3em;
+    border-radius: 0em 0em 0em 0em;
+    background-color: var(--cor02);
+    width: 18em;
+    height:4em;
+    text-align: center;
+    border: 0.2em solid var(--cor04);
+    }
+
+.bemVindo{
+  background-color: aqua;
+  grid-area: bemVindo;
+}
+
+.slider{
+  background-color: mediumorchid;
+  grid-area: slider;
+  padding: 1%;
+}
+
+.footer{
+  background-color: #423629;
+  grid-area: footer;
+}
+
+#id {
+  width: 100%;
+  height:100%;
+  max-height: 800px;
+  object-fit: contain;
+}
+
+@media only screen and (max-width: 1100px){
+ .container{
+  grid-template-columns: 5fr 2fr;
+  grid-template-rows: 0.5fr 5fr 0.2fr;
+  grid-template-areas: 
+  "header header"
+  "slider slider"
+  "footer footer";
+}
+
+  .header{
+  grid-template-columns: 9fr 0.5fr;
+  grid-template-areas: 
+  "menu menu2";
+  }
+
+  .logoimg{
+    display: none;
+  }
+
+  .bemVindo{
+    display: none;
+  }
+}
+
+
+@media only screen and (max-width: 840px){
+   .menu a{
+    font-size: 15px;
+    text-decoration: none;
+    padding: 5px 5px 5px 5px;
+    color: var(--cor04);
+    margin: 0 1vw;
+    line-height: 100px;
+    border-radius: 25%;
+    border: 2px solid var(--cor04);
+  }
+
+  .menu{
+    white-space: nowrap;
+  }
+ }
+
+
+
+   
