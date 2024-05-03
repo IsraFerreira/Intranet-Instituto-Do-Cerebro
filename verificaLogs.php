@@ -3,7 +3,7 @@
 <head>
    <meta charset="utf-8">
    <link rel="stylesheet" href="styles/EditVeLog.css">
-   <title>Verificação de login</title>
+   <title>Verificação da intranet</title>
 </head>
 <body>
 
@@ -36,7 +36,7 @@ else {
              <a href="adm.php" class="icon"><i class="fa-solid fa-circle-arrow-left"></i></a>
         </div>
         <div class="for">
-            <h1>Central de alterações </h1> 
+            <h1>Central de alterações da Intranet</h1> 
             <p>
                 <form action="<?php echo $_SERVER['PHP_SELF']; ?>">
                 <input type="text" name="parametro" placeholder="Filtrar" class="filtro" />

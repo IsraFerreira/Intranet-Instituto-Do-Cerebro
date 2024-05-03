@@ -1,0 +1,347 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+   
+   
+    --cor01: #BEFFC7;
+    --cor02: #3b617c;
+    --cor03: #423629;
+    --cor04: #3477a7;
+    --cor05: #fff;
+    --cor06: #ffffff;
+    --cor07: #a8c59a;
+    --cor08: #3d6e43;
+    --cor09: rgb(196, 10, 10);
+    --cor010: #b4bbc2;
+    
+  }  
+  
+  body{
+    overflow-x: hidden;
+    overflow-y: auto; 
+  }
+  
+  body::-webkit-scrollbar{
+  display: none;
+  }
+  
+  .sessao {
+    position: absolute;
+    width: 100px;
+    height: fit-content;
+    right: 5px;
+    padding: 3px;
+    z-index: 2;
+  }
+  
+  .sessao h4 {
+    font-size: 15px;
+  }
+  
+  .sessao .sair{
+    color: var(--cor09);
+  }
+
+  .container{
+    display: grid;
+    width: 100vw;
+    height: 100vh;
+  grid-template-rows: 0.1fr 1fr;
+  grid-template-areas: 
+   "header"
+   "conteudo";
+   background-color: var(--cor05);
+  }
+  
+
+  .header{
+   grid-area: header;
+   display: grid;
+   grid-template-columns: 0.1fr 1fr 0.1fr;
+   grid-template-areas: 
+   "back for logout";
+   padding: 0.5rem;
+   
+  
+
+  }
+  
+  .back{
+    grid-area: back;
+    margin: 1em 4em 0 0;
+  }
+
+  .back i{
+    color: var(--cor04);
+    font-size: 40px;
+  }
+
+  .for{
+    grid-area: for;
+  }
+
+  .conteudo{
+    grid-area: conteudo;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+    align-items: center;
+  
+
+  }
+
+  h1{
+    font-size: 40px;
+    color:var(--cor04);
+    margin: 0.9em;
+  }
+
+  .img1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100%;
+    width:5rem;
+    height: 5rem;
+    background: linear-gradient(90deg, rgb(59, 117, 80) 0%, rgb(142, 199, 154) 35%,rgb(171, 226, 189)) 100%;
+    box-shadow:  2px 3px 15px #2c8048, 0 0 rgb(59, 117, 80);
+  
+  }
+
+  
+  .img2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100%;
+    width:5rem;
+    height: 5rem;
+    background: linear-gradient(90deg, rgb(199, 49, 49) 0%, rgb(235, 171, 171) 35%,rgb(255, 236, 236)) 100%;
+    box-shadow:  2px 3px 15px #8d0d0d, 0px 0 rgb(199, 49, 49);
+  
+  }
+
+  
+  .img3{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100%;
+    width:5rem;
+    height: 5rem;
+    background: linear-gradient(90deg, var(--cor04) 0%, #72a2c2 35%, #b2ccdd) 100%;
+    box-shadow:  2px 3px 15px #1a5277, 
+            0px 0 var(--cor04);
+   
+  
+  }
+
+  .btnEstoque{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border-radius: 5%;
+    background-color: var(--cor06);
+    width: 450px;
+    height: 400px;
+    box-shadow:  2px 3px 15px #585858, 0 0 rgb(124, 124, 124);
+            
+  }
+
+  .btnTarefas{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 450px;
+    height: 400px;
+    cursor: pointer;
+    border-radius: 5%;
+    background-color: var(--cor06);
+    box-shadow:  2px 3px 15px #585858, 0 0 rgb(124, 124, 124);
+  }
+
+  .btnAcao{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 450px;
+    height: 400px;
+    cursor: pointer;
+    border-radius: 5%;
+    background-color: var(--cor06);
+    box-shadow:  2px 3px 15px #585858, 0 0 rgb(124, 124, 124);
+  
+  }
+
+ .efeito:hover{
+  transform: scale(1.1);
+  transition: all 0.5s;
+  font-size:30px;
+  font-weight: bolder;
+ }
+
+ .conteudo i{
+  font-size:2rem;
+  margin: 0 7px;
+ }
+
+ p{
+  font-size: 1.3rem;
+ }
+
+ .btnEstoque:hover{
+  box-shadow:  2px 3px 15px #2c8048, 0 0 rgb(59, 117, 80);
+  
+}
+ 
+.btnTarefas:hover{
+  box-shadow:  2px 3px 15px #8d0d0d, 0px 0 rgb(199, 49, 49);
+}
+
+.btnAcao:hover{
+  box-shadow:  2px 3px 15px #1a5277, 0px 0 var(--cor04);
+}
+
+ 
+@media only screen and (max-width: 1500px) {
+  
+  .btnEstoque{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border-radius: 5%;
+    background-color: var(--cor06);
+    width: 350px;
+    height: 300px;
+    box-shadow:  2px 3px 15px #585858, 0 0 rgb(124, 124, 124);
+           
+  }
+
+  .btnEstoque:hover{
+    box-shadow:  2px 3px 15px #2c8048, 0 0 rgb(59, 117, 80);
+    
+  }
+  .btnTarefas{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border-radius: 5%;
+    background-color: var(--cor06);
+    width: 350px;
+    height: 300px;
+    box-shadow:  2px 3px 15px #585858, 0 0 rgb(124, 124, 124);         
+  }
+
+  .btnTarefas:hover{
+    box-shadow:  2px 3px 15px #8d0d0d, 0px 0 rgb(199, 49, 49);
+  }
+
+  .btnAcao{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border-radius: 5%;
+    background-color: var(--cor06);
+    width: 350px;
+    height: 300px;
+    box-shadow:  2px 3px 15px #585858, 0 0 rgb(124, 124, 124);
+  }
+
+  .btnAcao:hover{
+    box-shadow:  2px 3px 15px #1a5277, 0px 0 var(--cor04);
+  }
+
+
+}
+
+
+@media only screen and (max-width: 1200px) {
+  .btnEstoque{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border-radius: 5%;
+    background-color: var(--cor06);
+    width: 250px;
+    height: 200px;   
+    margin: 1rem; 
+    box-shadow:  2px 3px 15px #585858, 0 0 rgb(124, 124, 124);    
+  }
+
+  .btnEstoque:hover{
+    box-shadow:  2px 3px 15px #2c8048, 0 0 rgb(59, 117, 80);
+    
+  }
+
+  .img1{
+    width:4rem;
+    height:4rem;
+
+  }
+
+  .img2{
+    width:4rem;
+    height:4rem;
+
+  }
+
+  .img3{
+    width:4rem;
+    height:4rem;
+
+  }
+
+
+  .btnTarefas{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border-radius: 5%;
+    background-color: var(--cor06);
+    width: 250px;
+    height: 200px;
+    margin: 1rem; 
+    box-shadow:  2px 3px 15px #585858, 0 0 rgb(124, 124, 124);
+        
+  }
+
+  .btnTarefas:hover{
+    box-shadow:  2px 3px 15px #8d0d0d, 0px 0 rgb(199, 49, 49);
+  }
+
+  .btnAcao{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border-radius: 5%;
+    background-color: var(--cor06);
+    width: 250px;
+    height: 200px;
+    margin: 1rem; 
+    box-shadow:  2px 3px 15px #585858, 0 0 rgb(124, 124, 124);
+  }
+
+  .btnAcao:hover{
+    box-shadow:  2px 3px 15px #1a5277, 0px 0 var(--cor04);
+  }
+
+}

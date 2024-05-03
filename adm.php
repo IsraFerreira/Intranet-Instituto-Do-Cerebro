@@ -38,19 +38,20 @@ else {
         </div>
         
     </div>
+       
     <div class="altera">
-        <a href="usuarioEdit.php" class="area1 efeito"> <i class="fa-solid fa-user"></i>Gerenciar Usuarios</a>
-        <a href="teste1" class="area2 efeito"><i class="fa-solid fa-clock"></i> Em Breve</a>
-        <a href="upload.php" class="area3 efeito"><i class="fa-solid fa-panorama"></i>Slider</a>
-        <a href="visualizarPags.php" class="area4 efeito"><i class="fa-solid fa-copy"></i>  Editar páginas</a>
-        <a href="http://172.16.3.38/Sistemas-Integrados/login.html" class="area5 efeito"><i class="fa-solid fa-sitemap"></i> Sistemas Integrados</a>
-        <a href="http://172.16.3.38/Sistemas-Integrados/ocorrencias/visualizarOcorrencias.php" class="area6 efeito"><i class="fa-solid fa-list-check"></i> Tarefas</a>
-        <a href="http://intranet.iec.net/estoque/visualizar.php" class="area7 efeito"><i class="fa-solid fa-boxes-stacked"></i> Estoque</a>
-        <a href="teste3" class="area8 efeito"><i class="fa-solid fa-clock"></i> Em Breve</a>
-        <a href="teste4" class="area9 efeito"><i class="fa-solid fa-clock"></i> Em Breve</a>
-        <a href="teste5" class="area10 efeito"><i class="fa-solid fa-clock"></i> Em Breve</a>
-        <a href="verificaLogs.php" class="area11 efeito"><i class="fa-solid fa-globe"></i>Controle de alterações</a>
-        <a href="index.php" class="area12 efeito"><i class="fa-solid fa-house"></i>Retornar Intranet</a>
+        <a href="usuarioEdit.php" class="area1 efeito"> <i class="fa-solid fa-user"></i><br>Gerenciar Usuarios</a>
+        <a href="info.php" class="area2 efeito"><i class="fa-solid fa-land-mine-on"></i><br>Informações</a>
+        <a href="upload.php" class="area3 efeito"><i class="fa-solid fa-panorama"></i><br>Slider</a>
+        <a href="visualizarPags.php" class="area4 efeito"><i class="fa-solid fa-copy"></i><br>Editar páginas</a>
+        <a href="http://172.16.3.38/Sistemas-Integrados/login.html" class="area5 efeito"><i class="fa-solid fa-sitemap"></i><br>Sistemas Integrados</a>
+        <a href="http://172.16.3.38/Sistemas-Integrados/ocorrencias/visualizarOcorrencias.php" class="area6 efeito"><i class="fa-solid fa-list-check"></i><br>Tarefas</a>
+        <a href="http://intranet.iec.net/estoque/visualizar.php" class="area7 efeito"><i class="fa-solid fa-boxes-stacked"></i><br>Estoque</a>
+        <a href="teste3" class="area8 efeito"><i class="fa-solid fa-clock"></i><br>Em Breve</a>
+        <a href="teste4" class="area9 efeito"><i class="fa-solid fa-clock"></i><br>Em Breve</a>
+        <a href="teste5" class="area10 efeito"><i class="fa-solid fa-clock"></i><br>Em Breve</a>
+        <a href="EscCentralDados.php" class="area11 efeito"><i class="fa-solid fa-globe"></i><br>Controle de alterações</a>
+        <a href="index.php" class="area12 efeito"><i class="fa-solid fa-house"></i><br>Retornar Intranet</a>
             
     </div>
     <div class="footer">

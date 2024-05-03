@@ -18,30 +18,31 @@ echo '<!DOCTYPE HTML>
    <meta charset="utf-8">
    <title>Seja bem-vindo ao IEC</title>
    <link rel="stylesheet" href="../styles/stylesPaginas.css">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+   <script src="https://kit.fontawesome.com/baa307742c.js" crossorigin="anonymous"></script>
 </head>
 <body>
 <script src="https://kit.fontawesome.com/baa307742c.js" crossorigin="anonymous"></script>
 <div class="container">
-    <div class="header">
-        <img class="logoimg" src="../img/logoiec.png" >
-        <div class="menu">
-         <a href="../index.php">Home</a>
-         <a href="gerenciadorDePagina.php?nomedaPag=sistemaMV"'.$classMV.'>Sistema MV</a>
-         <a href="gerenciadorDePagina.php?nomedaPag=ramais"'.$classRamais.'>Ramais</a>
-         <a href="gerenciadorDePagina.php?nomedaPag=cardapio"'.$classCardapio.'>Cardápio</a>
-         <a href="gerenciadorDePagina.php?nomedaPag=chamados"'.$classChamados.'>Chamados</a>
-         <a href="gerenciadorDePagina.php?nomedaPag=email"'.$classEmail.'>Email</a>
-        </div>
-        <div class="menu2">
-           <ul>
-              <li><a href="../adm.php">Sou Adm</a></li>
-              <li><a href="gerenciadorDePagina.php?nomedaPag=QuemSomos">Quem Somos</a></li>
-              <li><a href="gerenciadorDePagina.php?nomedaPag=elogios">Elogios</a></li>
-              <li><a href="gerenciadorDePagina.php?nomedaPag=tutoriais">Tutoriais</a></li>
-              <li><a href="https://ensino.ideas.med.br/login">Treinamento IDEAS</a></li>
-         </ul>
-        </div>
-    </div>
+        <nav class="header">
+        <section class="logo">
+         <img class="logoimg" alt="Logo IEC" src="../img/logoiec.png" >
+        </section>
+        <section class="browser">
+            <ul>
+                <li><a href="../index.php">Home</a></li>
+                <li><a href="gerenciadorDePagina.php?nomedaPag=sistemaMV"'.$classMV.'>Sistema MV / Tzion</a></li>
+                <li><a href="gerenciadorDePagina.php?nomedaPag=ramais"'.$classRamais.'>Ramais</a></li>
+                <li><a href="gerenciadorDePagina.php?nomedaPag=cardapio"'.$classCardapio.' >Cardápio</a></li>
+                <li><a href="gerenciadorDePagina.php?nomedaPag=chamados"'.$classChamados.'>Chamados</a></li>
+                <li><a href="gerenciadorDePagina.php?nomedaPag=email"'.$classEmail.'>Email</a></li>
+                <li><a href="../adm.php" target="_blank">Sou Adm</a></li>
+            </ul>
+        </nav>
+    </section>
+
     <div class="conteudo">';
 
 
@@ -53,32 +54,29 @@ while ($row = $queryPagina->fetch_assoc()) {
 
 
 echo '</div>
-        <div class="footer">
-        <div class= "opaco">
-        </div>
-        <div class="textp"> 
-          <p>Feito pela equipe de TI do Instituto Estadual do Cerebro Paulo Niemeyer</p>
-        </div>
+        <footer>
+            <section class="considerations">
+                 <p>Feito pela equipe de TI do Instituto Estadual do Cerebro Paulo Niemeyer</p>
+            </section>
         <div class="topo">
-         <a href="#top" class="btn-top"><i class="fa-solid fa-arrow-up"></i> Voltar ao topo</a>
-        <script>
-            const botao = document.querySelector(".btn-top");
-            window.addEventListener("scroll", function (event){
-                if (window.scrolly == 0){
-                botao.classList.remove("visible"); 
-                } else{
-                    botao.classList.add("visible");
-                }
-                });
-        </script>
+            <a href="#top" class="btn-top"><i class="fa-solid fa-arrow-up"></i> Voltar ao topo</a>
+            <script>
+                const botao = document.querySelector(".btn-top");
+                window.addEventListener("scroll", function (event){
+                    if (window.scrolly == 0){
+                    botao.classList.remove("visible"); 
+                    } else{
+                        botao.classList.add("visible");
+                    }
+                    });
+            </script>
         </div>
+        </footer>
 
-        </div>
       </div>
       </body>
       </html>';
 
 ?>
-
 
 

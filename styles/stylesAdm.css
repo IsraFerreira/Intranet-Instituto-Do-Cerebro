@@ -89,6 +89,7 @@ grid-template-areas:
 
 .altera a{
    display: flex;
+   flex-direction: column;
    justify-content: center;
    align-items: center; 
    /* display: grid;
@@ -114,18 +115,18 @@ grid-template-areas:
 
 }
 
+.efeito {
+  transition: .2s ease-in-out;
+}
+
 .efeito:hover{
   display: grid;
-  border: 1px solid #000;
-  box-shadow:  8px 22px 15px #676767,  
-    -5px 1px 15px 2px black ;
+  border: 1px solid #616161;
+  box-shadow: 1px 1px 20px #616161;
   transform: scale(1.1);
-  transition: all 0.5s;
   content:"texto extra";
   font-size:30px;
-  font-weight: bolder;
 
-  
 }
 
 .altera i{
@@ -215,4 +216,3 @@ grid-template-areas:
   grid-area: footer;
   color:#9b9b9b;
 }
-
